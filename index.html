@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Café da Alice no País das Maravilhas</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="bot-chapeleiro">
+    <div class="chapeleiro">🎩</div>
+    <div class="fala">Bem-vindo ao País das Maravilhas! ☕</div>
+ </div>
+
+    <header>
+
+    <div class="logo">
+    <span>🐇</span>
+
+    <div>
+        <h1>Café da Alice</h1>
+        <p>UMA XÍCARA DE MAGIA</p>
+    </div>
+ </div>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="frase-topo">
+        ♥
+        <span>Um lugar para<br>sonhar acordado.</span>
+    </div>
+ </header>
+
+
+    <main>
+        
+       <section id="inicio">
+
+    <div class="decoracao">
+        ♠ ♥ ♣ ♦
+    </div>
+
+    <div class="bem-vindo">
+        BEM-VINDO AO
+    </div>
+
+    <h2>Café da Alice</h2>
+
+    <div class="linha">
+        ─── ✦ ───
+    </div>
+
+    <p>Entre no País das Maravilhas<br>
+        e descubra uma xícara de magia.</p>
+
+ <button class="botao-cardapio" onclick="document.getElementById('cardapio').scrollIntoView({ behavior: 'smooth' });">
+           Conheça nosso cardápio
+    </button>
+
+    <div class="seta">
+        ↓
+    </div>
+
+  </section>
+
+     <section id="especialidades">
+
+    <p class="frase-alice">
+        “É sempre hora do chá!”
+    </p>
+
+    <h2>✨ Especialidades do País das Maravilhas ✨</h2>
+
+    <div class="especialidades-container">
+
+        <div class="especialidade">
+            <div class="especialidade-icone">🫖</div>
+            <h3>Chá do Chapeleiro</h3>
+            <p>
+                Um chá especial para acompanhar
+                uma tarde cheia de magia.
+            </p>
+        </div>
+
+        <div class="especialidade">
+            <div class="especialidade-icone">🍰</div>
+            <h3>Bolos Encantados</h3>
+            <p>
+                Deliciosos bolos preparados para
+                tornar sua visita ainda mais especial.
+            </p>
+        </div>
+
+        <div class="especialidade">
+            <div class="especialidade-icone">🐇</div>
+            <h3>Café do Coelho Branco</h3>
+            <p>
+                Uma bebida para quem está sempre
+                correndo atrás do tempo.
+            </p>
+        </div>
+
+    </div>
+
+ </section>
+
+        <section id="cardapio">
+
+    <h2>🍰 O Cardápio Maluco 🍰</h2>
+
+    <p class="subtitulo"> Escolha uma delícia e entre no País das maravilhas.</p>
+
+    <div class="filtros">
+       <button class="filtro-ativo" onclick="filtrarCardapio('todos', this)">Todos</button>
+ 
+       <button onclick="filtrarCardapio('cafes', this)">Cafés</button>
+
+       <button onclick="filtrarCardapio('doces', this)">Doces</button>
+    </div>
+
+
+    <div class="cardapio-container">
+
+        <div class="produto cafes"onclick="mostrarProduto('Café do Chapeleiro', 'R$ 10,00')">
+            <div class="icone"><img src="img/Chapeleiro.png" alt="Chapeleiro"></div>
+            <h3>Café do Chapeleiro</h3>
+            <p>Café especial com leite cremoso.</p>
+            <strong>R$ 10,00</strong>
+        </div>
+
+
+        <div class="produto cafes" onclick="mostrarProduto('Chá da Alice', 'R$ 8,00')">
+            <div class="icone"><img src="img/Alice.png" alt="Alice"></div>
+            <h3>Chá da Alice</h3>
+            <p>Chá aromático servido quente.</p>
+            <strong>R$ 8,00</strong>
+        </div>
+
+
+        <div class="produto doces" onclick="mostrarProduto('Bolo da Rainha', 'R$ 12,00')">
+            <div class="icone"><img src="img/Rainha.png" alt="Rainha"></div>
+            <h3>Bolo da Rainha</h3>
+            <p>Bolo de chocolate com cobertura.</p>
+            <strong>R$ 12,00</strong>
+        </div>
+
+
+        <div class="produto doces" onclick="mostrarProduto('Cookie do Coelho', 'R$ 7,00')">
+            <div class="icone"><img src="img/Coelho.png" alt="Coelho"></div>
+            <h3>Cookie do Coelho</h3>
+            <p>Cookie crocante com gotas de chocolate.</p>
+            <strong>R$ 7,00</strong>
+        </div>
+
+
+        <div class="produto doces" onclick="mostrarProduto('Torta Encantada', 'R$ 14,00')">
+            <div class="icone"><img src="img/Valete.png" alt="Valete"></div>
+            <h3>Torta Encantada</h3>
+            <p>Torta de frutas vermelhas.</p>
+            <strong>R$ 14,00</strong>
+        </div>
+
+
+        <div class="produto cafes" onclick="mostrarProduto('Chocolate Maluco', 'R$ 11,00')">
+            <div class="icone"><img src="img/Gato.png" alt="Gato"></div>
+            <h3>Chocolate Maluco</h3>
+            <p>Chocolate quente cremoso.</p>
+            <strong>R$ 11,00</strong>
+        </div>
+
+    </div>
+
+ </section>
+
+
+       <section id="sobre">
+
+      <p class="frase-alice">🐇 “Você está atrasado para um café muito importante...” ⏰</p>
+
+     <div class="sobre-container">
+
+        <div class="sobre-texto">
+
+            <span class="destaque">UMA EXPERIÊNCIA ENCANTADA</span>
+
+            <h2>Nossa História no País das Maravilhas</h2>
+
+            <p>O Café Alice nasceu da vontade de transformar
+                uma simples pausa para o café em uma aventura especial.</p>
+
+            <p> Inspirado pelo universo de Alice, criamos um espaço
+                onde cafés, doces e boas histórias se encontram.</p>
+
+            <p class="frase"> “Às vezes, tudo o que precisamos é de uma boa xícara de café e um pouco de magia.”</p>
+
+        </div>
+
+        <div class="sobre-decoracao">
+            ☕
+            <span>Pequenos momentos,<br>grandes histórias.</span>
+        </div>
+
+    </div>
+
+ </section>
+
+     <section id="avaliacoes">
+
+    <span class="destaque">MOMENTOS QUE FICAM</span>
+
+    <h2>O que dizem sobre o País das Maravilhas</h2>
+
+    <div class="avaliacoes-container">
+
+        <div class="avaliacao">
+            <div class="estrelas">★★★★★</div>
+
+            <p> “Um lugar encantador! O café é delicioso
+                e o ambiente é maravilhoso.”</p>
+
+            <strong>— Havenna</strong>
+        </div>
+
+
+        <div class="avaliacao">
+            <div class="estrelas">★★★★★</div>
+
+            <p>“O Chá da Alice virou meu favorito.
+                Já quero voltar!”</p>
+
+            <strong>— Gabrielle</strong>
+        </div>
+
+
+        <div class="avaliacao">
+            <div class="estrelas">★★★★★</div>
+
+            <p> “Tudo muito gostoso e o atendimento
+                foi incrível. Recomendo!”</p>
+
+            <strong>— Lucas</strong>
+        </div>
+
+    </div>
+
+ </section>
+
+       <section id="contato">
+
+    <h2>Entre no País das Maravilhas</h2>
+    <p class="contato-frase">
+        Venha tomar um chá, um café e viver uma experiência encantadora.
+    </p>
+
+    <div class="contato-container">
+
+        <div class="informacoes">
+
+            <h3>🐇 Venha nos visitar</h3>
+
+            <p>📍 São Paulo - SP</p>
+            <p>🕐 Segunda a sábado — 9h às 19h</p>
+            <p>📞 (11) 99999-9999</p>
+            <p>📧 contato@cafealice.com</p>
+
+        </div>
+
+
+        <form id="formulario">
+
+            <input 
+                type="text" 
+                id="nome" 
+                placeholder="Seu nome,viajante"
+                required
+            >
+
+            <input 
+                type="email" 
+                id="email" 
+                placeholder="Seu e-mail"
+                required
+            >
+
+            <textarea 
+                id="mensagem" 
+                placeholder="Sua mensagem para o Chapeleiro"
+                rows="5"
+                required
+            ></textarea>
+
+            <button type="submit">🫖 Enviar mensagem</button>
+
+        </form>
+
+    </div>
+
+ </section>
+
+    </main>
+
+
+    <footer>
+
+        <p> Café Alice | Um café fora do comum 🫖🐇</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
